@@ -1,0 +1,22 @@
+seed: 666
+debug: false  # set debug=False for Full Training
+
+model_name: ParlNet #ParlNet
+train_bs: 32 #32
+val_bs: 32 #32
+epochs: 200
+lr: 0.0001
+l2norm: 0.001
+num_classes: 3
+device: 0
+windowLength: 40
+windowStep: 40
+srate: 4
+ckpt_dir: './ckpt'
+ckpt_name: 'Emotion'
+patience: 20
+activation: 'softmax'
+loss: 'categorical_crossentropy'
+channels: 40
+input_shape: [40, 200]
+folder: '4hz'
